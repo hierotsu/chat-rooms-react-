@@ -6,7 +6,7 @@ import Rooms from './components/Rooms'
 
 import './App.css';
 
-console.log('process.env.REACT_APP_LOCAL', process.env.REACT_APP_LOCAL, typeof process.env.REACT_APP_LOCAL)
+// console.log('process.env.REACT_APP_LOCAL', process.env.REACT_APP_LOCAL, typeof process.env.REACT_APP_LOCAL)
 export const SERVER_URL = process.env.REACT_APP_LOCAL === '1' ? "http://localhost:3001" : "https://chat-react-buzzy-bob.herokuapp.com/"
 // export const SERVER_URL = "https://chat-react-buzzy-bob.herokuapp.com/"
 
