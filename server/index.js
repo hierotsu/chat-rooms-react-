@@ -4,7 +4,7 @@ const http = require('http')
 const { Server } = require('socket.io')
 const cors = require('cors')
 
-const ORIGIN = "http://localhost:3000"
+const ORIGIN = process.env.port ? "http://localhost:3220" : "http://localhost:3000";
 
 app.use(cors())
 
@@ -100,6 +100,6 @@ io.on('connection', (socket) => {
     })
 })
 
-server.listen(3001, () => {
+server.listen(process.env.port || 3001, () => {
     console.log('Servidor pronto')
 })
