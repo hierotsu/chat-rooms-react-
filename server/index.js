@@ -4,7 +4,8 @@ const http = require('http')
 const { Server } = require('socket.io')
 const cors = require('cors')
 
-const ORIGIN = process.env.port ? "http://localhost:3220" : "http://localhost:3000";
+const ORIGIN = process.env.port ? "https://chat-react-buzzy-bob.herokuapp.com/" : "http://localhost:3000";
+console.log(ORIGIN)
 
 app.use(cors())
 
